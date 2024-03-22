@@ -27,7 +27,7 @@ return(<>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center" style={{ paddingLeft: "0px", justifyContent: "space-between", gap: "15px" }}>
-                            <Nav.Link href="#features">Menu</Nav.Link>
+                        <NavLink to="/" style={{ textDecoration: 'none', color: 'blue' }}>Menu</NavLink>
                             <Nav.Link href="#pricing">My Order</Nav.Link>
                             <Nav.Link href="#pricing">Cart</Nav.Link>
                             <Nav.Link href="#pricing">My Bill</Nav.Link>
@@ -41,7 +41,9 @@ return(<>
                 <Row>
                     <Col xs={7} className="offset-1">
                         <Breadcrumb>
-                            <Breadcrumb.Item href="/">Menu</Breadcrumb.Item>
+                            <Breadcrumb.Item>
+                            <NavLink to={"/"}>Menu</NavLink>
+                            </Breadcrumb.Item>
                             <Breadcrumb.Item active>
                                 Food / All
                             </Breadcrumb.Item>
