@@ -24,7 +24,9 @@ const FoodDetailPage = () => {
         <>
             <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="#home">Logo Restaurant App</Navbar.Brand>
+                <Navbar.Brand style={{ textDecoration: 'none', color: 'black' }}>
+                        <NavLink to={"/"} style={{ textDecoration: 'none', color: 'black' }}>Logo Restaurant App</NavLink>
+                    </Navbar.Brand>                    
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center" style={{ paddingLeft: "0px", justifyContent: "space-between", gap: "15px" }}>
