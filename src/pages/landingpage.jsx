@@ -29,10 +29,10 @@ const LandingPage = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center" style={{ paddingLeft: "0px", justifyContent: "space-between", gap: "15px" }}>
                         <NavLink to="/" style={{ textDecoration: 'none', color: 'blue' }}>Menu</NavLink>
-                            <Nav.Link href="#pricing">My Order</Nav.Link>
-                            <Nav.Link href="#pricing">Cart</Nav.Link>
-                            <Nav.Link href="#pricing">My Bill</Nav.Link>
-                            <Nav.Link href="#pricing">About us</Nav.Link>
+                        <NavLink to="/order" style={{ textDecoration: 'none', color: 'blue' }}>My Order</NavLink>
+                            <NavLink to="/cart" style={{ textDecoration: 'none', color: 'blue' }}>Cart</NavLink>
+                            <NavLink to="/bill" style={{ textDecoration: 'none', color: 'blue' }}>My Bill</NavLink>
+                            <NavLink to="/about" style={{ textDecoration: 'none', color: 'blue' }}>About us</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -134,6 +134,60 @@ const LandingPage = () => {
                             <Col className='text-center' sm={4} xs={4}>
                                 <div className="d-flex flex-column justify-content-center h-100">
                                     <NavLink to={"/food"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </Slider>
+            </Container>
+
+            <div className="d-flex mt-3 my-2 justify-content-between align-items-center px-3">
+                <span style={{ fontSize: "1.25rem" }}>Drink</span>
+                <span style={{ fontSize: "1.25rem" }}><NavLink to={"/drink/all"}>See More</NavLink></span>
+            </div>
+            <Container>
+                <ToastContainer /> {/* Add ToastContainer */}
+                <Slider dots={false} swipeToSlide={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
+                    <div>
+                        <Row>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div>
+                        <Row>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
+                                    <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
+                                </div>
+                            </Col>
+                            <Col className='text-center' sm={4} xs={4}>
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                    <NavLink to={"/drink"}><Image src="https://placehold.jp/80x80.png" className='rounded' /></NavLink>
                                     <Button className='btn btn-sm my-2' onClick={handleAddToCart}>Add To Cart</Button>
                                 </div>
                             </Col>

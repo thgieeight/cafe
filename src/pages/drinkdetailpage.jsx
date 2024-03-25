@@ -7,7 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-const FoodDetailPage = () => {
+const DrinkDetailPage = () => {
     const handleAddToCart = () => {
         toast.success("Item added to cart!", {
             position: "bottom-right",
@@ -50,7 +50,7 @@ const FoodDetailPage = () => {
                             <NavLink to={"/"}>Menu</NavLink>
                             </Breadcrumb.Item>
                             <Breadcrumb.Item active>
-                                Food
+                                Drink
                             </Breadcrumb.Item>
                         </Breadcrumb>
                     </Col>
@@ -81,4 +81,4 @@ const FoodDetailPage = () => {
     );
 }
 
-export default FoodDetailPage;
+export default DrinkDetailPage;

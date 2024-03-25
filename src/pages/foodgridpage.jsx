@@ -28,10 +28,10 @@ return(<>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center" style={{ paddingLeft: "0px", justifyContent: "space-between", gap: "15px" }}>
                         <NavLink to="/" style={{ textDecoration: 'none', color: 'blue' }}>Menu</NavLink>
-                            <Nav.Link href="#pricing">My Order</Nav.Link>
-                            <Nav.Link href="#pricing">Cart</Nav.Link>
-                            <Nav.Link href="#pricing">My Bill</Nav.Link>
-                            <Nav.Link href="#pricing">About us</Nav.Link>
+                        <NavLink to="/order" style={{ textDecoration: 'none', color: 'blue' }}>My Order</NavLink>
+                            <NavLink to="/cart" style={{ textDecoration: 'none', color: 'blue' }}>Cart</NavLink>
+                            <NavLink to="/bill" style={{ textDecoration: 'none', color: 'blue' }}>My Bill</NavLink>
+                            <NavLink to="/about" style={{ textDecoration: 'none', color: 'blue' }}>About us</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
